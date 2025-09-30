@@ -175,3 +175,49 @@ footer {
     margin-bottom: 0.5rem;
   }
 }
+/* Schedule Table */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+.schedule-table th,
+.schedule-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.schedule-table th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+.schedule-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .schedule-table thead {
+    display: none;
+  }
+  .schedule-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+  .schedule-table td {
+    display: block;
+    text-align: right;
+    padding: 0.5rem;
+    position: relative;
+  }
+  .schedule-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    text-align: left;
+  }
+}
