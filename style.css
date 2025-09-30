@@ -268,6 +268,7 @@ footer {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
 /* Layout with sidebars */
 .with-sidebars {
   display: flex;
@@ -277,15 +278,16 @@ footer {
   padding: 0 1rem;
 }
 
+/* Sidebar boxes - always styled as cards */
 .sidebar {
   flex: 1;
   background: #f9f9f9;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  font-size: 0.9rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-size: 1rem;
   color: #444;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .sidebar.left {
@@ -294,11 +296,18 @@ footer {
 
 .sidebar.right {
   text-align: right;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* Main card stays centered and larger */
 .with-sidebars .card {
   flex: 2;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 /* Mobile: stack content */
