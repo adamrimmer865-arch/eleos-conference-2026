@@ -134,3 +134,44 @@ footer {
   object-fit: cover;
   flex-shrink: 0;
 }
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  /* Logo smaller */
+  .logo-container img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  /* Nav turns into stacked buttons */
+  nav {
+    border-radius: 20px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  nav a {
+    display: block;
+    background: #ddd;
+    padding: 0.8rem;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  /* Sections tighter */
+  section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  /* Speaker list stacked */
+  .speaker-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .speaker-photo {
+    margin-bottom: 0.5rem;
+  }
+}
