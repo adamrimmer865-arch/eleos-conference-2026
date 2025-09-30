@@ -268,3 +268,45 @@ footer {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+/* Layout with sidebars */
+.with-sidebars {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.sidebar {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.sidebar.left {
+  text-align: left;
+}
+
+.sidebar.right {
+  text-align: right;
+}
+
+/* Main card stays centered and larger */
+.with-sidebars .card {
+  flex: 2;
+}
+
+/* Mobile: stack content */
+@media (max-width: 900px) {
+  .with-sidebars {
+    flex-direction: column;
+  }
+  .sidebar {
+    text-align: center;
+  }
+}
