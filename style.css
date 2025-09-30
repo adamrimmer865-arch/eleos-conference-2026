@@ -1,1 +1,116 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+h2 {
+  margin-top: 0;
+  color: #444;
+  font-size: 1.8rem;
+}
+
+/* Logo / Header Section */
+.logo-container {
+  background: #ffffff;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.logo-container img {
+  width: 70%;
+  max-width: 450px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navigation Tabs */
+nav {
+  background: #e9e9e9;
+  border-radius: 40px;
+  padding: 1rem;
+  max-width: 800px;
+  margin: -2rem auto 2rem auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: center;
+}
+nav a {
+  color: #444;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #000;
+}
+
+/* Section Cards */
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Speaker List */
+.speakers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.speakers-list li {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.speaker-name {
+  font-weight: bold;
+  display: block;
+  font-size: 1.1rem;
+}
+.speaker-church {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #555;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #333;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  background: #444;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+}
 
