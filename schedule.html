@@ -3,24 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schedule | Eleos Conference 2026</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Schedule - Eleos Conference 2026</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      margin-top: 40px;
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background: #eee;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background: #fafafa;
+    }
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        display: none;
+      }
+      td {
+        border: none;
+        padding: 10px;
+        position: relative;
+      }
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="logo-container">
-    <img src="Eleos-removebg-preview.png" alt="Eleos Conference 2026 Logo">
-  </div>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="schedule.html">Schedule</a>
-    <a href="speakers.html">Speakers</a>
-    <a href="register.html">Register</a>
-  </nav>
+  <main>
+    <h2>Friday Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Speaker</th>
+          <th>Topic</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Time">5:30pm - 6:30pm</td>
+          <td data-label="Speaker">Registration Begins</td>
+          <td data-label="Topic">Registration and Sign-in Begins</td>
+        </tr>
+        <tr>
+          <td data-label="Time">6:30pm - 6:40pm</td>
+          <td data-label="Speaker">Adam Rimmer</td>
+          <td data-label="Topic">Welcome</td>
+        </tr>
+        <tr>
+          <td data-label="Time">6:40pm - 7:40pm</td>
+          <td data-label="Speaker">Matt Boatwright</td>
+          <td data-label="Topic">Opening — Do you want to be well?</td>
+        </tr>
+        <tr>
+          <td data-label="Time">7:40pm - 8:15pm</td>
+          <td data-label="Speaker">Preliminary Panel</td>
+          <td data-label="Topic">Questions</td>
+        </tr>
+      </tbody>
+    </table>
 
-  <section>
     <h2>Saturday Schedule</h2>
-    <table class="schedule-table">
+    <table>
       <thead>
         <tr>
           <th>Time</th>
@@ -32,12 +133,7 @@
         <tr>
           <td data-label="Time">9:00am - 10:00am</td>
           <td data-label="Speaker">Tommy Warner</td>
-          <td data-label="Topic">Suffering - 6 Lessons</td>
-        </tr>
-        <tr>
-          <td data-label="Time">10:00am - 10:15am</td>
-          <td data-label="Speaker">Break</td>
-          <td data-label="Topic"></td>
+          <td data-label="Topic">Suffering — 6 Lessons</td>
         </tr>
         <tr>
           <td data-label="Time">10:15am - 11:15am</td>
@@ -47,7 +143,7 @@
         <tr>
           <td data-label="Time">11:30am - 12:30pm</td>
           <td data-label="Speaker">Alfonso Gilbert</td>
-          <td data-label="Topic">Nature of Trauma - Steps to Recovery</td>
+          <td data-label="Topic">Nature of Trauma — Steps to Recovery</td>
         </tr>
         <tr>
           <td data-label="Time">12:30pm - 1:15pm</td>
@@ -60,24 +156,19 @@
           <td data-label="Topic"></td>
         </tr>
         <tr>
-          <td data-label="Time">2:15pm - 3:15pm</td>
+          <td data-label="Time">2:30pm - 3:30pm</td>
           <td data-label="Speaker">Rusty Keltner</td>
           <td data-label="Topic">Mad at God — Biblical Lament</td>
         </tr>
         <tr>
-          <td data-label="Time">3:15pm - 3:30pm</td>
-          <td data-label="Speaker">Break</td>
-          <td data-label="Topic"></td>
-        </tr>
-        <tr>
-          <td data-label="Time">3:30pm - 4:30pm</td>
+          <td data-label="Time">3:40pm - 4:30pm</td>
           <td data-label="Speaker">Breakout Group 2</td>
-          <td data-label="Topic">Kyle Rhea, Rusty Keltner — When God is Silent, Adam Barnhart</td>
+          <td data-label="Topic">Kyle Rhea, Rusty Keltner, Adam Barnhart — When God is Silent</td>
         </tr>
         <tr>
           <td data-label="Time">4:30pm - 5:30pm</td>
-          <td data-label="Speaker">Dinner / Final Panel / Dismissal</td>
-          <td data-label="Topic"></td>
+          <td data-label="Speaker">Dinner / Panel Discussion</td>
+          <td data-label="Topic">Questions</td>
         </tr>
         <tr>
           <td data-label="Time">5:30pm - 7:00pm</td>
@@ -86,11 +177,6 @@
         </tr>
       </tbody>
     </table>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Eleos Conference. All Rights Reserved.</p>
-  </footer>
+  </main>
 </body>
 </html>
-
