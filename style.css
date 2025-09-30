@@ -114,3 +114,23 @@ footer {
   font-size: 0.95rem;
 }
 
+/* Speaker Images */
+.speaker-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.speaker-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ddd; /* gray placeholder */
+  object-fit: cover;
+  flex-shrink: 0;
+}
