@@ -272,36 +272,42 @@ footer {
 /* Layout with sidebars */
 .with-sidebars {
   display: flex;
+  align-items: stretch; /* make all three equal height */
   gap: 1.5rem;
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* Sidebar boxes - always styled as cards */
 .sidebar {
   flex: 1;
-  background: #f9f9f9;
+  background: #fff; /* match center card */
   padding: 1.5rem;
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   font-size: 1rem;
   color: #444;
   line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .sidebar.left {
   text-align: left;
+  justify-content: flex-start; /* align scripture left */
+  align-items: flex-start;
 }
 
 .sidebar.right {
-  text-align: right;
   font-style: italic;
   font-size: 1.2rem;
   font-weight: bold;
+  text-align: center;
 }
 
-/* Main card stays centered and larger */
+/* Main card */
 .with-sidebars .card {
   flex: 2;
   background: #fff;
@@ -317,5 +323,7 @@ footer {
   }
   .sidebar {
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }
