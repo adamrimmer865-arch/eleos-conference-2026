@@ -180,19 +180,35 @@ footer {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden; /* keeps rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
 .schedule-table th,
 .schedule-table td {
-  padding: 0.75rem 1rem;
-  border: 1px solid #ddd;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
   text-align: left;
 }
+
 .schedule-table th {
-  background: #f0f0f0;
+  background: #f4f4f4;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
 }
+
 .schedule-table tr:nth-child(even) {
   background: #fafafa;
+}
+
+/* Highlight breaks/meals */
+.schedule-table tr.break-row td {
+  background: #f0f0f0;
+  font-style: italic;
+  color: #555;
 }
 
 /* Mobile Responsive */
@@ -206,6 +222,7 @@ footer {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 0.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
   }
   .schedule-table td {
     display: block;
@@ -221,3 +238,4 @@ footer {
     text-align: left;
   }
 }
+
