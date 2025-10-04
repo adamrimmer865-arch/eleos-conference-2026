@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #f2f2f2; /* light gray background */
+  background: #f2f2f2;
   color: #333;
   line-height: 1.6;
 }
@@ -15,12 +15,12 @@ h2 {
 
 /* Logo / Header Section */
 .logo-container {
-  background: #ffffff; /* white so gray logo text shows clearly */
+  background: #ffffff;
   text-align: center;
   padding: 3rem 1rem 2rem 1rem;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 .logo-container img {
   width: 70%;
@@ -32,15 +32,15 @@ h2 {
 
 /* Navigation Tabs */
 nav {
-  background: #000; /* black strip */
-  border-radius: 0; /* flat to separate from logo container */
+  background: #000;
+  border-radius: 0;
   padding: 1rem;
   max-width: 100%;
   margin: 0 auto 2rem auto;
   text-align: center;
 }
 nav a {
-  color: #fff; /* white text on black */
+  color: #fff;
   margin: 0 1.5rem;
   text-decoration: none;
   font-weight: 600;
@@ -48,7 +48,7 @@ nav a {
   transition: color 0.3s ease;
 }
 nav a:hover {
-  color: #ccc; /* light gray hover */
+  color: #ccc;
 }
 
 /* Section Cards */
@@ -58,37 +58,78 @@ section {
   padding: 2.5rem;
   background: #ffffff;
   border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-/* Speaker List */
-.speakers-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Speaker Cards */
+.speaker-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
-.speakers-list li {
-  margin: 1rem 0;
-  padding: 1rem;
-  background: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+
+.speaker-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+  background: #ddd;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+.speaker-item div {
+  flex: 1;
+}
+
 .speaker-name {
   font-weight: bold;
+  font-size: 1.4rem;
   display: block;
-  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
 }
+
 .speaker-church {
   color: #666;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* Mobile Speaker Cards */
+@media (max-width: 768px) {
+  .speaker-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .speaker-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .speaker-name {
+    font-size: 1.3rem;
+  }
+
+  .speaker-church {
+    font-size: 1rem;
+  }
 }
 
 /* Button */
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: #000; /* black button */
+  background: #000;
   color: white;
   text-decoration: none;
   border-radius: 40px;
@@ -97,13 +138,13 @@ section {
   transition: all 0.3s ease;
 }
 .btn:hover {
-  background: #333; /* dark gray hover */
+  background: #333;
   transform: translateY(-3px);
 }
 
 /* Footer */
 footer {
-  background: #000; /* black footer */
+  background: #000;
   color: white;
   text-align: center;
   padding: 2rem;
@@ -113,75 +154,14 @@ footer {
   font-size: 0.95rem;
 }
 
-/* Speaker Images */
-.speaker-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-  padding: 1rem;
-  background: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-}
-
-.speaker-photo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #ddd; /* gray placeholder */
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-  /* Logo smaller */
-  .logo-container img {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  /* Nav turns into stacked buttons */
-  nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  nav a {
-    display: block;
-    background: #222; /* dark gray button look */
-    padding: 0.8rem;
-    border-radius: 20px;
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  /* Sections tighter */
-  section {
-    margin: 1rem;
-    padding: 1.5rem;
-  }
-
-  /* Speaker list stacked */
-  .speaker-item {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-  .speaker-photo {
-    margin-bottom: 0.5rem;
-  }
-}
-
 /* Schedule Table */
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1.5rem;
   border-radius: 12px;
-  overflow: hidden; /* keeps rounded corners */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .schedule-table th,
@@ -192,7 +172,7 @@ footer {
 }
 
 .schedule-table th {
-  background: #000; /* black headers */
+  background: #000;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -201,10 +181,9 @@ footer {
 }
 
 .schedule-table tr:nth-child(even) {
-  background: #fafafa; /* light gray rows */
+  background: #fafafa;
 }
 
-/* Highlight breaks/meals */
 .schedule-table tr.break-row td {
   background: #f0f0f0;
   font-style: italic;
@@ -222,7 +201,7 @@ footer {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 0.5rem;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   }
   .schedule-table td {
     display: block;
@@ -246,7 +225,7 @@ footer {
   background: linear-gradient(135deg, #f9f9f9, #ececec);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hero-logo {
@@ -272,7 +251,7 @@ footer {
 /* Layout with sidebars */
 .with-sidebars {
   display: flex;
-  align-items: stretch; /* make all three equal height */
+  align-items: stretch;
   gap: 1.5rem;
   max-width: 1200px;
   margin: 2rem auto;
@@ -281,10 +260,10 @@ footer {
 
 .sidebar {
   flex: 1;
-  background: #fff; /* match center card */
+  background: #fff;
   padding: 1.5rem;
   border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   font-size: 1rem;
   color: #444;
   line-height: 1.6;
@@ -296,7 +275,7 @@ footer {
 
 .sidebar.left {
   text-align: left;
-  justify-content: flex-start; /* align scripture left */
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -313,7 +292,7 @@ footer {
   background: #fff;
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* Mobile: stack content */
