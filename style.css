@@ -306,3 +306,32 @@ footer {
     justify-content: center;
   }
 }
+.with-sidebars {
+  display: flex;
+  align-items: stretch; /* equal heights */
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1300px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card,
+.sidebar {
+  flex: 1;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar p {
+  text-align: left;
+  line-height: 1.7;
+}
+.sidebar.right p {
+  text-align: left;
+}
